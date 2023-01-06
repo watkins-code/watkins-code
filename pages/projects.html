@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="../MDB5-STANDARD-UI-KIT-Free-6.1.0/css/mdb.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-light">
+        <a class="navbar-brand px-4 py-1" href="index.html" aria-label="Home">
+          <img
+            class="home-icon"
+            alt="A blue letter W with red swirls around and beside it"
+            width="60px"
+            height="60px"
+            src="../media/medieval-w.svg"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportContent"
+          aria-controls="navbarSupportContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul
+          class="navbar-nav collapse navbar-collapse justify-content-end nav-justified"
+          id="navbarSupportContent"
+        >
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section>
+        <h1 class="display-3 text-center">Projects</h1>
+        <ul class="list-unstyled">
+          <li class="py-4">
+            <h2 class="text-center py-4">Virtual Reality</h2>
+            <p class="projects-explanation">
+              For this project I created a virtual reality game for Oculus Rift
+              using Unity. While creating the game, I explored the fundamentals
+              of virtual and augmented reality, including research about game
+              design practices, light and optics, the mathematics of physics and
+              motion, methods for tracking in XR, and human perception.
+            </p>
+            <div class="center">
+              <video width="500" height="500" controls>
+                <source src="../media/virtualRealityProject.mp4" />
+              </video>
+            </div>
+          </li>
+          <li class="py-4">
+            <h2 class="text-center py-4">Computer Vision</h2>
+            <p class="projects-explanation">
+              Using Python, I programmed Gaussian Blur, Gaussian Derivative, and
+              Sobel Filters. I avoided using pre-made functions in libraries;
+              instead, the program implemented code based on traditional
+              algorithms for each filter.
+            </p>
+            <!-- Section: Image1 Split screen -->
+            <section>
+              <div class="container px-0">
+                <div class="row g-0 justify-content-md-center">
+                  <!-- First column -->
+                  <div class="col-lg-4">
+                    <figure>
+                      <img
+                        src="../media/image1_original.png"
+                        alt="A person looks through a camera on a pedestal. The image is in focus."
+                        width="400"
+                        height="400"
+                      />
+                      <figcaption>
+                        The original image before filters were applied
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <!-- Second column -->
+                  <div class="col-lg-4">
+                    <!-- Carousel wrapper -->
+                    <div
+                      id="image1_gallery"
+                      class="carousel slide carousel-fade"
+                      data-mdb-ride="carousel"
+                    >
+                      <!-- Indicators -->
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-mdb-target="#image1_gallery"
+                          data-mdb-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-mdb-target="#image1_gallery"
+                          data-mdb-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-mdb-target="#image1_gallery"
+                          data-mdb-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                        <button
+                          type="button"
+                          data-mdb-target="#image1_gallery"
+                          data-mdb-slide-to="3"
+                          aria-label="Slide 4"
+                        ></button>
+                        <button
+                          type="button"
+                          data-mdb-target="#image1_gallery"
+                          data-mdb-slide-to="4"
+                          aria-label="Slide 5"
+                        ></button>
+                      </div>
+
+                      <!-- Inner -->
+                      <div class="carousel-inner">
+                        <!-- Single item -->
+                        <figure class="carousel-item active">
+                          <img
+                            src="../media/image1_gaussian_3x3.png"
+                            class="d-block w-100"
+                            alt="A person looks through a camera on a pedestal. The image is slightly blurred."
+                            width="400"
+                            height="400"
+                          />
+                          <figcaption
+                            class="carousel-caption d-none d-md-block background-dark"
+                          >
+                            Gaussian filter applied using a 3x3 matrix
+                          </figcaption>
+                        </figure>
+
+                        <!-- Single item -->
+                        <figure class="carousel-item">
+                          <img
+                            src="../media/image1_gaussian_5x5.png"
+                            class="d-block w-100"
+                            alt="A person looks through a camera on a pedestal. The image is moderately blurred."
+                            width="400"
+                            height="400"
+                          />
+                          <figcaption
+                            class="carousel-caption d-none d-md-block background-dark"
+                          >
+                            Gaussian filter applied using a 5x5 matrix
+                          </figcaption>
+                        </figure>
+
+                        <!-- Single item -->
+                        <figure class="carousel-item">
+                          <img
+                            src="../media/image1_derivative_gx.png"
+                            class="d-block w-100"
+                            alt="A person looks through a camera on a pedestal. vertical edges are emphasized."
+                            width="400"
+                            height="400"
+                          />
+                          <figcaption
+                            class="carousel-caption d-none d-md-block background-dark"
+                          >
+                            Derivative of the Gaussian filter applied using a gx
+                            matrix
+                          </figcaption>
+                        </figure>
+
+                        <!-- Single item -->
+                        <figure class="carousel-item">
+                          <img
+                            src="../media/image1_derivative_gy.png"
+                            class="d-block w-100"
+                            alt="A person looks through a camera on a pedestal. horizontal edges are emphasized."
+                            width="400"
+                            height="400"
+                          />
+                          <figcaption
+                            class="carousel-caption d-none d-md-block background-dark"
+                          >
+                            Derivative of the Gaussian filter applied using a gy
+                            matrix
+                          </figcaption>
+                        </figure>
+
+                        <!-- Single item -->
+                        <figure class="carousel-item">
+                          <img
+                            src="../media/image1_sobel.png"
+                            class="d-block w-100"
+                            alt="A person looks through a camera on a pedestal. Edges are dramatically outlined."
+                            width="400"
+                            height="400"
+                          />
+                          <figcaption
+                            class="carousel-caption d-none d-md-block background-dark"
+                          >
+                            Sobel filter
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- Inner -->
+
+                      <!-- Controls -->
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-mdb-target="#image1_gallery"
+                        data-mdb-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-mdb-target="#image1_gallery"
+                        data-mdb-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <!-- Carousel wrapper -->
+                  </div>
+                  <!-- Second column -->
+                </div>
+              </div>
+            </section>
+            <!-- Section: Image2 Split screen -->
+            <section>
+              <div class="container px-0">
+                <div class="row g-0 justify-content-md-center">
+                  <!-- First column -->
+                  <div class="col-lg-6">
+                    <figure>
+                      <img
+                        src="../media/image2_original.png"
+                        alt="A city scape. The image is in focus."
+                        width="600"
+                        height="400"
+                      />
+                      <figcaption>
+                        The original image before filters were applied
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <!-- Second column -->
+                  <div class="col-lg-6">
+                    <!-- Carousel wrapper -->
+                    <div
+                      id="image2_gallery"
+                      class="carousel slide carousel-fade"
+                      data-mdb-ride="carousel"
+                    >
+                      <!-- Indicators -->
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-mdb-target="#image2_gallery"
+                          data-mdb-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-mdb-target="#image2_gallery"
+                          data-mdb-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-mdb-target="#image2_gallery"
+                          data-mdb-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                        <button
+                          type="button"
+                          data-mdb-target="#image2_gallery"
+                          data-mdb-slide-to="3"
+                          aria-label="Slide 4"
+                        ></button>
+                        <button
+                          type="button"
+                          data-mdb-target="#image2_gallery"
+                          data-mdb-slide-to="4"
+                          aria-label="Slide 5"
+                        ></button>
+                      </div>
+
+                      <!-- Inner -->
+                      <div class="carousel-inner">
+                        <!-- Single item -->
+                        <figure class="carousel-item active">
+                          <img
+                            src="../media/image2_gaussian_3x3.png"
+                            class="d-block w-100"
+                            alt="A city scape. The image is slightly blurred."
+                            width="600"
+                            height="400"
+                          />
+                          <figcaption
+                            class="carousel-caption d-none d-md-block background-dark"
+                          >
+                            Gaussian filter applied using a 3x3 matrix
+                          </figcaption>
+                        </figure>
+
+                        <!-- Single item -->
+                        <figure class="carousel-item">
+                          <img
+                            src="../media/image2_gaussian_5x5.png"
+                            class="d-block w-100"
+                            alt="A city scape. The image is moderately blurred."
+                            width="600"
+                            height="400"
+                          />
+                          <figcaption
+                            class="carousel-caption d-none d-md-block background-dark"
+                          >
+                            Gaussian filter applied using a 5x5 matrix
+                          </figcaption>
+                        </figure>
+
+                        <!-- Single item -->
+                        <figure class="carousel-item">
+                          <img
+                            src="../media/image2_derivative_gx.png"
+                            class="d-block w-100"
+                            alt="A city scape. vertical edges are emphasized."
+                            width="600"
+                            height="400"
+                          />
+                          <figcaption
+                            class="carousel-caption d-none d-md-block background-dark"
+                          >
+                            Derivative of the Gaussian filter applied using a gx
+                            matrix
+                          </figcaption>
+                        </figure>
+
+                        <!-- Single item -->
+                        <figure class="carousel-item">
+                          <img
+                            src="../media/image2_derivative_gy.png"
+                            class="d-block w-100"
+                            alt="A city scape. horizontal edges are emphasized."
+                            width="600"
+                            height="400"
+                          />
+                          <figcaption
+                            class="carousel-caption d-none d-md-block background-dark"
+                          >
+                            Derivative of the Gaussian filter applied using a gy
+                            matrix
+                          </figcaption>
+                        </figure>
+
+                        <!-- Single item -->
+                        <figure class="carousel-item">
+                          <img
+                            src="../media/image2_sobel.png"
+                            class="d-block w-100"
+                            alt="A city scape. Edges are dramatically outlined."
+                            width="600"
+                            height="400"
+                          />
+                          <figcaption
+                            class="carousel-caption d-none d-md-block background-dark"
+                          >
+                            Sobel filter
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- Inner -->
+
+                      <!-- Controls -->
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-mdb-target="#image2_gallery"
+                        data-mdb-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-mdb-target="#image2_gallery"
+                        data-mdb-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <!-- Carousel wrapper -->
+                  </div>
+                  <!-- Second column -->
+                </div>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </section>
+      <!-- Section: Split screen -->
+      <section class="courses mx-auto">
+        <h2 class="text-center py-4">Coursework</h2>
+        <ul class="list-unstyled">
+          <li>
+            <p class="title">Web Development</p>
+            <ul class="pb-4">
+              <li>
+                Developed skills using HTML, CSS, and JavaScript to build a CV
+                website
+              </li>
+              <li>
+                Discussed functional JavaScript, Bootstrap, JQuery, and Ajax
+              </li>
+              <li>
+                Practiced implementing best practices in code for web
+                accessibility
+              </li>
+            </ul>
+          </li>
+          <li></li>
+          <li>
+            <p class="title">Algorithms and Complexity</p>
+            <ul class="pb-4">
+              <li>
+                Researched techniques for the design and analysis of algorithms
+              </li>
+              <li>
+                Conducted case studies of existing algorithms and commpared
+                results with theorized time complexity
+              </li>
+              <li>
+                Calculated the efficiency of programs between operative systems
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="title">Computer Systems Programming</p>
+            <ul class="pb-4">
+              <li>
+                Studied machine organization, linking and loading, dynamic
+                memory allocation techniques, systems calls, and other
+                machine-level processes
+              </li>
+              <li>
+                Programmed in C and assembly language to implement procedure
+                calls and complex data types at a machine level
+              </li>
+              <li>
+                Practiced hacking in a remove environment to gauge the
+                vulnerability of systems
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-kj3o2dktikvyik3uenzmm7kckrr/re9/qpg6aazgjwfdmvna/gpgff93hxpg5kkn"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-apnbgh9b+y1qktv3rn7w3mgpxhu9k/scqsap7huibx39j7fakfpskvxusvfa0b4q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-jzr6spejh4u02d8jot6vlehfe/jqgirrsqqxsffwpi1mquvdayjuar5+76pvcmyl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../MDB5-STANDARD-UI-KIT-Free-6.1.0/js/mdb.min.js"
+    ></script>
+  </body>
+</html>
